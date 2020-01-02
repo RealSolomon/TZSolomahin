@@ -249,7 +249,6 @@ body {
 
 .card__inner {
     position: relative;
-    background-color: #000000;
 }
 
 .card__inner:hover .card__img {
@@ -257,7 +256,7 @@ body {
 }
 
 .card__inner:hover .card__img img {
-    opacity: .1;
+    opacity: 1;
 }
 
 .card__inner:hover .card__text {
@@ -265,8 +264,6 @@ body {
 }
 
 .card__img {
-    background: linear-gradient(to bottom, #de3a3a, #1e92f7);
-
     transition: transform .2s linear;
 }
 
