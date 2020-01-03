@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Shipping</title>
+</head>
+<body>
+    <!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+    </div>
+    <header class="header" id="header">
+        <div class="container-h">
+            <div class="header__inner">
+                <div class="header__logo" data-scroll="#intro"><a href="./index.html">ShotZ SHOP</a></div>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="./cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a class="nav__link" href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class='container'>
+        <div class='window'>
+        <div class='order-info'>
+            <div class='order-info-content'>
+            <h2>Order Summary</h2>
+                    <div class='line'></div>
+            <table class='order-table'>
+                <tbody>
+                <tr>
+                    <td><img src='./assets/images/X.jpg' class='full-width'></img>
+                    </td>
+                    <td>
+                    <br> <span class='thin'>Apple</span>
+                    <br> IPhone X<br> <span class='thin small'> Color: White, Storage: 256Gb<br><br></span>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <td>
+                    <div class='price'>$1000.00</div>
+                    </td>
+                </tr>
+                </tbody>
+    
+            </table>
+            <div class='line'></div>
+            <table class='order-table'>
+                <tbody>
+                <tr>
+                    <td><img src='./assets/images/XR.jpg' class='full-width'></img>
+                    </td>
+                    <td>
+                    <br> <span class='thin'>Apple</span>
+                    <br>IPhone XR<br> <span class='thin small'> Color: Black, Storage: 256Gb</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <div class='price'>$1200.00</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class='line'></div>
+            <table class='order-table'>
+                <tbody>
+                <tr>
+                    <td><img src='./assets/images/XS.png' class='full-width'></img>
+                    </td>
+                    <td>
+                    <br> <span class='thin'>Apple</span>
+                    <br>IPhone XS<br> <span class='thin small'> Color: Pink, Storage: 512Gb</span>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <td>
+                    <div class='price'>$1200.00</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class='line'></div>
+            <div class='total'>
+                <span style='float:left;'>
+                <div class='thin dense'>VAT 10%</div>
+                <div class='thin dense'>Delivery</div>
+                TOTAL
+                </span>
+                <span style='float:right; text-align:right;'>
+                <div class='thin dense'>$330.00</div>
+                <div class='thin dense'>$150.00</div>
+                $3780.00
+                </span>
+            </div>
+    </div>
+    </div>
+            <div class='person-info'>
+                <div class='person-info-content'>
+                <table class='half-input-table'>
+                    <tr><td>Shipping options: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>FREE SHIPPING</div>
+                    <div class='dropdown-select'>
+                    <ul>
+                        <li>EXPRESS SHIPPING</li>
+                        <li>COURIER SHIPPING</li>
+                        </ul></div>
+                    </div>
+                    </td></tr>
+                </table>
+                <img src='./assets/images/Free.png' height='80' class='person-card-image' id='person-card-image'></img>
+                Name*
+                <form action="#" class="form">
+                    <div class="form__field">
+                        <input required type="text" id="name" onkeyup='checkParams()' placeholder=""/>
+                    </div>
+                Address*
+                    <div class="form__field">
+                        <input required type="text" id="address" onkeyup='checkParams()' placeholder=""/>
+                    </div>
+                Phone
+                    <div class="form__field">
+                        <input type="tel" id="phone" onkeyup='checkParams()' placeholder="+38" />
+                    </div>
+                E-mail
+                    <div class="form__field">
+                        <input type="email" id="email" onkeyup='checkParams()' placeholder="email@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+                        <span class="form__error">Invalid e-mail</span>
+                    </div>
+                
+                    <a href="#" class="pay-btn" ><button type="submit" class="btn btn1" id="pay" onClick="alert('Спасибо за покупку!')" disabled>PAY</button></a>
+                </form>   
+                </div>
+    
+            </div>
+            </div>
+    </div>
+
+    <link rel="stylesheet" href="./assets/css/shipping.css">  
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+	<script src="./assets/js/shipping.js"></script> 
+</body>
+</html>
